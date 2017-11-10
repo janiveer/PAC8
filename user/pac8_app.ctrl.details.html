@@ -1,0 +1,293 @@
+
+<!DOCTYPE html
+  PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+   
+      <title>Controller&nbsp;/ Door Detail</title>
+      <link rel="stylesheet" type="text/css" href="docbook.css">
+      <link rel="stylesheet" type="text/css" href="files/Website.css">
+      <meta name="generator" content="DocBook XSL Stylesheets V1.79.2">
+      <link rel="home" href="index.html" title="User Help">
+      <link rel="up" href="pac8_app.ctrl.html" title="Controllers&nbsp;/ Doors">
+      <link rel="prev" href="pac8_app.ctrl.html" title="Controllers&nbsp;/ Doors">
+      <link rel="next" href="pac8_app.keys.html" title="Keys">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <meta name="format-detection" content="telephone=no">
+   </head>
+   <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
+      <div class="navigation">
+         <table width="100%" summary="Navigation">
+            <tr>
+               <td width="40%" align="left"><span class="nav-button"><a accesskey="t" href="index.html"><span class="glyphicon glyphicon-menu-hamburger"></span><span class="nav-text">&nbsp;ToC</span></a></span>&nbsp;<span class="nav-button"><a accesskey="h" href="../index.html"><span class="glyphicon glyphicon-home"></span><span class="nav-text">&nbsp;Home</span></a></span></td>
+               <td width="60%" align="right"><span class="nav-button"><a accesskey="p" href="pac8_app.ctrl.html"><span class="glyphicon glyphicon-arrow-left"></span><span class="nav-text">&nbsp;Prev</span></a></span>&nbsp;<span class="nav-button"><a accesskey="u" href="pac8_app.ctrl.html"><span class="glyphicon glyphicon-arrow-up"></span><span class="nav-text">&nbsp;Up</span></a></span>&nbsp;<span class="nav-button"><a accesskey="n" href="pac8_app.keys.html"><span class="glyphicon glyphicon-arrow-right"></span><span class="nav-text">&nbsp;Next</span></a></span></td>
+            </tr>
+         </table>
+      </div>
+      <div class="breadcrumbs"><span class="breadcrumb-link"><a href="index.html">User Help</a></span>&nbsp;&#8250; <span class="breadcrumb-link"><a href="pac8_app.main.html">Main Menu</a></span>&nbsp;&#8250; <span class="breadcrumb-link"><a href="pac8_app.ctrl.html">Controllers&nbsp;/ Doors</a></span>&nbsp;&#8250; <span class="breadcrumb-node">Controller&nbsp;/ Door Detail</span></div>
+      <div class="section" id="pac8_app.ctrl.details">
+         <div class="titlepage">
+            <div>
+               <div>
+                  <h3 class="title">Controller&nbsp;/ Door Detail</h3>
+               </div>
+            </div>
+         </div>
+         <p>This menu enables you to check the controller details and specify door options.</p>
+         <div class="procedure" id="id-1.3.4.5.3">
+            <div class="procedure-title">To specify controller and door details:</div>
+            <ol class="procedure" type="1">
+               <li class="step">
+                  <p>Check the following options&nbsp;to make sure you are configuring the correct controller:</p>
+                  <div class="variablelist">
+                     <dl class="variablelist">
+                        <dt><span class="term"><span class="guilabel">Controller Name</span></span></dt>
+                        <dd>
+                           <p>Read only. The name of the <span class="phrase">PAC8</span> controller.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Controller Serial</span></span></dt>
+                        <dd>
+                           <p>Read only. The serial number of the <span class="phrase">PAC8</span> controller.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Controller Number</span></span></dt>
+                        <dd>
+                           <p>Read only. The number of the <span class="phrase">PAC8</span> controller on this site.
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+               </li>
+               <li class="step">
+                  <p>Enter the following options:</p>
+                  <div class="variablelist">
+                     <dl class="variablelist">
+                        <dt><span class="term"><span class="guilabel">Door Name</span></span></dt>
+                        <dd>
+                           <p>Enter a name for the door controlled by this <span class="phrase">PAC8</span> controller.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Lock Release Time</span></span></dt>
+                        <dd>
+                           <p>Enter a time in seconds. This determines how long the door is unlocked when a valid key is presented or when Request to Exit
+                              (RTE) is pressed.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Door Open Time</span></span></dt>
+                        <dd>
+                           <p>Enter a time in seconds. If the door remains open for longer than the specified time, a <code class="systemitem">Door Open</code> alarm is generated. You must specify a time when door monitoring is enabled.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Extra Time</span></span></dt>
+                        <dd>
+                           <p>Enter a time in seconds. This determines the extra time that the door should remain unlocked for keyholders who need more
+                              time to get through the door.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Lock Fails Closed</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, lock output is configured for Fail Closed (Fail Secure). When switched
+                              off (the default), lock output is configured for Fail Open (Fail Safe).
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Lock Toggle</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, the door remains unlocked after a valid access using any key. The door
+                              will be locked again when any valid key is presented.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Reader 1 Wire Cut</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the Reader 1 wire is cut, and sounds an alarm if the Alarm Output mode is set to <code class="option">Alarm</code>.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Reader 2 Wire Cut</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the Reader 2 wire is cut, and sounds an alarm if the Alarm Output mode is set to <code class="option">Alarm</code>.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Touchpad RTE</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, a keyholder may press the touchpad on the front of the <span class="phrase">PAC8</span> controller to request to exit.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Case Tamper</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the case tamper switch is triggered.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Case Tamper Alarm</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> controller sounds an alarm when the the case tamper switch is triggered. Case Tamper must be set to <code class="option">On</code> and the Alarm Output mode must be set to <code class="option">Alarm</code>.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">LED Follows Lock</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, the LED on the front of the <span class="phrase">PAC8</span> glows to indicate the status of the lock: red when locked, green when unlocked.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">LED Heartbeat</span></span></dt>
+                        <dd>
+                           <p>Toggle on or off. When this option is switched on, the LED on the front of the <span class="phrase">PAC8</span> flashes blue intermittently to indicate that the controller is working.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Select Reader Configuration</span></span></dt>
+                        <dd>
+                           <p>Select an option from the pop-up menu:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">No Readers&nbsp;&#8212;&nbsp;</span>No readers or external RTE switch in use.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Reader In, RTE&nbsp;&#8212;&nbsp;</span>In reader and external RTE switch in use; out reader not used.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Reader In, Reader Out&nbsp;&#8212;&nbsp;</span>In reader and out reader in use; external RTE switch not used.
+                                    </p>
+                                    <p></p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>Or choose <code class="option">Cancel</code>.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Select Reader Option</span></span></dt>
+                        <dd>
+                           <p>Select an option from the pop-up menu:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Proximity Only&nbsp;&#8212;&nbsp;</span>Keyholders must present a valid token to unlock the door.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">PIN Only&nbsp;&#8212;&nbsp;</span>Keyholders must enter the system access PIN to unlock the door.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Proximity and PIN&nbsp;&#8212;&nbsp;</span>Keyholders must present a valid token and enter the system access PIN to unlock the door.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Proximity or PIN&nbsp;&#8212;&nbsp;</span>Keyholders must present a valid token or enter the system access PIN to unlock the door.
+                                    </p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>Or choose <code class="option">Cancel</code>.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Select Door Contact Mode</span></span></dt>
+                        <dd>
+                           <p>Select an option from the pop-up menu:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">General Purpose Input&nbsp;&#8212;&nbsp;</span>The controller input is used as a general purpose input.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Present&nbsp;&#8212;&nbsp;</span>The controller input is used for a door contact, to enable door monitoring.
+                                    </p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>Or choose <code class="option">Cancel</code>.
+                           </p>
+                           <div class="note">
+                              <table border="0" summary="Note: Note">
+                                 <tr>
+                                    <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="files/icons/note.png"></td>
+                                    <th align="left">Note</th>
+                                 </tr>
+                                 <tr>
+                                    <td align="left" valign="top">
+                                       <p>You must also select the appropriate I/O mode.</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Select Alarm Output Mode</span></span></dt>
+                        <dd>
+                           <p>Select an option from the pop-up menu:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">General Purpose Output&nbsp;&#8212;&nbsp;</span>The controller output is used as a general purpose output.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Alarm&nbsp;&#8212;&nbsp;</span>The controller output is used as an alarm output, e.g. to trigger a sounder.
+                                    </p>
+                                    <p></p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Select I/O Mode</span></span></dt>
+                        <dd>
+                           <p>Select an option from the pop-up menu:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">No Output&nbsp;&#8212;&nbsp;</span>The controller output does nothing.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Door Monitoring&nbsp;&#8212;&nbsp;</span>If the door is forced open, or if the door is held open for longer than the Door Open time, an alarm is generated.  For this
+                                       mode, Door Contact mode must be set to <code class="option">Present</code> and Alarm Output mode must be set to <code class="option">Alarm</code>.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Follow input (Timed)&nbsp;&#8212;&nbsp;</span>When the input is triggered, the output is triggered for the length of time specified by <span class="guilabel">Follow Input Duration</span>. For this mode, Door Contact mode must be set to <code class="option">General Purpose Input</code> and Alarm Output mode must be set to <code class="option">General Purpose Output</code>.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">Follow input (Latched)&nbsp;&#8212;&nbsp;</span>When the input is triggered, the output is triggered until you deactivate it with the <span class="phrase">PAC8</span> app. For this mode, Door Contact mode must be set to <code class="option">General Purpose Input</code> and Alarm Output mode must be set to <code class="option">General Purpose Output</code>.
+                                    </p>
+                                 </li>
+                              </ul>
+                           </div>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Follow Input Duration</span></span></dt>
+                        <dd>
+                           <p>Enter a time in seconds. This determines how long the output is triggered when the I/O mode is set to <code class="option">Follow input (triggered)</code>.
+                           </p>
+                        </dd>
+                        <dt><span class="term"><span class="guilabel">Time Profile</span></span></dt>
+                        <dd>
+                           <p>Select an option from the pop-up menu:</p>
+                           <div class="itemizedlist">
+                              <ul class="itemizedlist">
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title"><em class="replaceable"><code>Time Profile Name</code></em>&nbsp;&#8212;&nbsp;</span>To apply this time profile.
+                                    </p>
+                                 </li>
+                                 <li class="listitem">
+                                    <p><span class="formalpara-title">None&nbsp;&#8212;&nbsp;</span>To apply no time profile.
+                                    </p>
+                                 </li>
+                              </ul>
+                           </div>
+                           <p>Or choose <code class="option">Cancel</code>.
+                           </p>
+                        </dd>
+                     </dl>
+                  </div>
+               </li>
+               <li class="step">
+                  <p>Tap <span class="guibutton">Save</span> to save the options or <span class="guibutton">Cancel</span> to cancel.
+                  </p>
+               </li>
+            </ol>
+         </div>
+      </div>
+   </body>
+</html>
