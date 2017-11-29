@@ -551,6 +551,10 @@ div.navigation .nav-button > a {
   text-decoration: none;
 }
 
+div.navigation form > label {
+  color: #ffffff;
+}
+
 div.navigation .nav-button > a:hover,
 div.navigation .nav-button > a:focus {
   color: #ffffff;
