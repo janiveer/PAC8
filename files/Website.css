@@ -48,12 +48,15 @@ div.navigation:first-of-type{
   background-color: #231F20;
   border-color: #121212;
   color: #ffffff;
-  padding-left: 8px;
-  padding-right: 8px;
-  padding-top: 8px;
-  min-height: 42px;
-  max-height: 42px;
-  height: 42px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 11px;
+  padding-bottom: 5px;
+  min-height: 34px;
+  max-height: 34px;
+  height: 34px;
+  min-width: 320px;
+  overflow: hidden;
   position: fixed;
   right: 0;
   left: 0;
@@ -66,10 +69,6 @@ div.navigation:last-of-type{
 
 div.navigation > table{
   border-spacing: 0px;
-}
-
-div.navigation > table a img{
-  vertical-align: text-bottom;
 }
 
 h1,h2,h3,h4,h5{
@@ -546,13 +545,30 @@ div.footnote sup.simpara{
 
 /* Navigation Links */
 
+div.navigation form > label,
 div.navigation .nav-button > a {
   color: #ffffff;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  padding-left: 8px;
+  padding-right: 8px;
   text-decoration: none;
 }
 
-div.navigation form > label {
-  color: #ffffff;
+div.navigation form {
+  margin-bottom: 0em;
+}
+
+div.navigation form input[type='text'] {
+  font-size: 1em;
+  font-family: inherit;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-left: 8px;
+  margin-right: 8px;
+  width: 68%;
+  max-width: 200px;
+  min-width: 3em;
 }
 
 div.navigation .nav-button > a:hover,
