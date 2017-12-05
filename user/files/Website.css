@@ -215,8 +215,8 @@ table.variablelist > thead > tr > td,
 table.variablelist > tfoot > tr > td,
 dl.variablelist > dt,
 dl.variablelist > dd {
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 dl.variablelist {
@@ -1500,12 +1500,14 @@ div.tipue_search_content_url {
 
   dl.variablelist > dt {
     flex-basis: 20%;
+    max-width: 20%;
     border-right: 2px solid white;
     border-bottom: 2px solid white;
   }
 
   dl.variablelist > dd {
     flex-basis: 80%;
+    max-width: 80%;
     margin-left: 0px;
     border-bottom: 2px solid white;
   }
