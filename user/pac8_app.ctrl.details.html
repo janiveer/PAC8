@@ -68,72 +68,99 @@
                      <dl class="variablelist">
                         <dt><span class="term"><span class="guilabel">Door Name</span></span></dt>
                         <dd>
-                           <p>Enter a name for the door controlled by this <span class="phrase">PAC8</span> controller.
+                           <p>Enter a name for the door controlled by this <span class="phrase">PAC8</span> controller. By default, this option is not set.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Lock Release Time</span></span></dt>
                         <dd>
                            <p>Enter a time in seconds. This determines how long the door is unlocked when a valid key is presented or when Request to Exit
-                              (RTE) is pressed.
+                              (RTE) is pressed. By default, this is set to 5.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Door Open Time</span></span></dt>
                         <dd>
-                           <p>Enter a time in seconds. If the door remains open for longer than the specified time, a <code class="systemitem">Door Open</code> alarm is generated. You must specify a time when door monitoring is enabled.
+                           <p>Enter a time in seconds. If the door remains open for longer than the specified time, a <code class="systemitem">Door Open</code> alarm is generated. By default, this is set to 5.
                            </p>
+                           <div class="note">
+                              <table border="0" summary="Note: Note">
+                                 <tr>
+                                    <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="files/icons/note.png"></td>
+                                    <th align="left">Note</th>
+                                 </tr>
+                                 <tr>
+                                    <td align="left" valign="top">
+                                       <p>You must specify a time when door monitoring is enabled.</p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Extra Time</span></span></dt>
                         <dd>
                            <p>Enter a time in seconds. This determines the extra time that the door should remain unlocked for keyholders who need more
-                              time to get through the door.
+                              time to get through the door. By default, this is set to 10.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Lock Fails Closed</span></span></dt>
                         <dd>
                            <p>Toggle on or off. When this option is switched on, if there is a fault or power failure, the lock will close (Fail Closed&nbsp;/
                               Fail Secure). When switched off, if there is a fault or power failure, the lock will open (Fail Open&nbsp;/ Fail Safe). By default,
-                              this option is switched off.
+                              this option is switched on.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Lock Toggle</span></span></dt>
                         <dd>
                            <p>Toggle on or off. When this option is switched on, the door remains unlocked after a valid access using any key. The door
-                              will be locked again when any valid key is presented.
+                              will be locked again when any valid key is presented. By default, this option is switched off.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Reader 1 Wire Cut</span></span></dt>
                         <dd>
-                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the Reader 1 wire is cut, and sounds an alarm if the Alarm Output mode is set to <code class="option">Alarm</code>.
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the Reader 1 wire is cut, and sounds an alarm if the Alarm Output mode is set to <code class="option">Alarm</code>. By default, this option is switched off.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Reader 2 Wire Cut</span></span></dt>
                         <dd>
-                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the Reader 2 wire is cut, and sounds an alarm if the Alarm Output mode is set to <code class="option">Alarm</code>.
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the Reader 2 wire is cut, and sounds an alarm if the Alarm Output mode is set to <code class="option">Alarm</code>. By default, this option is switched off.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Touchpad RTE</span></span></dt>
                         <dd>
-                           <p>Toggle on or off. When this option is switched on, a keyholder may press the touchpad on the front of the <span class="phrase">PAC8</span> controller to request to exit.
+                           <p>Toggle on or off. When this option is switched on, a keyholder may press the touchpad on the front of the <span class="phrase">PAC8</span> controller to request to exit. By default, this option is switched off.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Case Tamper</span></span></dt>
                         <dd>
-                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the case tamper switch is triggered.
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> detects when the case tamper switch is triggered. By default, this option is switched off.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Case Tamper Alarm</span></span></dt>
                         <dd>
-                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> controller sounds an alarm when the the case tamper switch is triggered. Case Tamper must be set to <code class="option">On</code> and the Alarm Output mode must be set to <code class="option">Alarm</code>.
+                           <p>Toggle on or off. When this option is switched on, the <span class="phrase">PAC8</span> controller sounds an alarm when the the case tamper switch is triggered. By default, this option is switched off.
                            </p>
+                           <div class="note">
+                              <table border="0" summary="Note: Note">
+                                 <tr>
+                                    <td rowspan="2" align="center" valign="top" width="25"><img alt="[Note]" src="files/icons/note.png"></td>
+                                    <th align="left">Note</th>
+                                 </tr>
+                                 <tr>
+                                    <td align="left" valign="top">
+                                       <p>To use this option, you must also set Case Tamper to <code class="option">On</code> and set the Alarm Output mode to <code class="option">Alarm</code>.
+                                       </p>
+                                    </td>
+                                 </tr>
+                              </table>
+                           </div>
                         </dd>
                         <dt><span class="term"><span class="guilabel">LED Follows Lock</span></span></dt>
                         <dd>
-                           <p>Toggle on or off. When this option is switched on, the LED on the front of the <span class="phrase">PAC8</span> glows to indicate the status of the lock: red when locked, green when unlocked.
+                           <p>Toggle on or off. When this option is switched on, the LED on the front of the <span class="phrase">PAC8</span> glows to indicate the status of the lock: red when locked, green when unlocked. By default, this option is switched off.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">LED Heartbeat</span></span></dt>
                         <dd>
-                           <p>Toggle on or off. When this option is switched on, the LED on the front of the <span class="phrase">PAC8</span> flashes blue intermittently to indicate that the controller is working.
+                           <p>Toggle on or off. When this option is switched on, the LED on the front of the <span class="phrase">PAC8</span> flashes blue intermittently to indicate that the controller is working. By default, this option is switched off.
                            </p>
                         </dd>
                         <dt><span class="term"><span class="guilabel">Select Reader Configuration</span></span></dt>
@@ -142,7 +169,7 @@
                            <div class="itemizedlist">
                               <ul class="itemizedlist">
                                  <li class="listitem">
-                                    <p><span class="formalpara-title">No Readers&nbsp;&#8212;&nbsp;</span>No readers or external RTE switch in use.
+                                    <p><span class="formalpara-title">No Readers&nbsp;&#8212;&nbsp;</span>No readers or external RTE switch in use. This option is selected by default.
                                     </p>
                                  </li>
                                  <li class="listitem">
@@ -165,7 +192,7 @@
                            <div class="itemizedlist">
                               <ul class="itemizedlist">
                                  <li class="listitem">
-                                    <p><span class="formalpara-title">Proximity Only&nbsp;&#8212;&nbsp;</span>Keyholders must present a valid token to unlock the door.
+                                    <p><span class="formalpara-title">Proximity Only&nbsp;&#8212;&nbsp;</span>Keyholders must present a valid token to unlock the door. This option is selected by default.
                                     </p>
                                  </li>
                                  <li class="listitem">
@@ -191,7 +218,7 @@
                            <div class="itemizedlist">
                               <ul class="itemizedlist">
                                  <li class="listitem">
-                                    <p><span class="formalpara-title">General Purpose Input&nbsp;&#8212;&nbsp;</span>The controller input is used as a general purpose input.
+                                    <p><span class="formalpara-title">General Purpose Input&nbsp;&#8212;&nbsp;</span>The controller input is used as a general purpose input. This option is selected by default.
                                     </p>
                                  </li>
                                  <li class="listitem">
@@ -222,7 +249,7 @@
                            <div class="itemizedlist">
                               <ul class="itemizedlist">
                                  <li class="listitem">
-                                    <p><span class="formalpara-title">General Purpose Output&nbsp;&#8212;&nbsp;</span>The controller output is used as a general purpose output.
+                                    <p><span class="formalpara-title">General Purpose Output&nbsp;&#8212;&nbsp;</span>The controller output is used as a general purpose output. This option is selected by default.
                                     </p>
                                  </li>
                                  <li class="listitem">
@@ -239,7 +266,7 @@
                            <div class="itemizedlist">
                               <ul class="itemizedlist">
                                  <li class="listitem">
-                                    <p><span class="formalpara-title">No Output&nbsp;&#8212;&nbsp;</span>The controller output does nothing.
+                                    <p><span class="formalpara-title">No Output&nbsp;&#8212;&nbsp;</span>The controller output does nothing. This option is selected by default.
                                     </p>
                                  </li>
                                  <li class="listitem">
@@ -273,7 +300,7 @@
                                     </p>
                                  </li>
                                  <li class="listitem">
-                                    <p><span class="formalpara-title">None&nbsp;&#8212;&nbsp;</span>To apply no time profile.
+                                    <p><span class="formalpara-title">None&nbsp;&#8212;&nbsp;</span>To apply no time profile. This option is selected by default.
                                     </p>
                                  </li>
                               </ul>
