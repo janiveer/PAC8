@@ -444,7 +444,6 @@ a:focus {
 }
 
 span.button {
-  display: -ms-inline-grid;
   display: inline-grid;
   width: 100%;
 }
@@ -1481,10 +1480,12 @@ div.tipue_search_content_url {
 
   dl.variablelist > dt {
     flex-basis: 100%;
+    max-width: 100%;
   }
 
   dl.variablelist > dd {
     flex-basis: 100%;
+    max-width: 100%;
     margin-left: 0px;
     border-bottom: 2px solid white;
   }
