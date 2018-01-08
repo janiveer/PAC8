@@ -32,6 +32,7 @@ div.sect5,
 div.section,
 div.toc,
 div.breadcrumbs,
+div.comments,
 div.navigation + h1,
 div#tipue_search_content {
   padding-left: 8px;
