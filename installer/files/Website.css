@@ -20,6 +20,10 @@ div.breadcrumbs{
 	font-size: 0.8em
 }
 
+div.comments p{
+	padding-top: 1em;
+}
+
 div.article,
 div.book,
 div.chapter,
