@@ -554,7 +554,8 @@ div.footnote sup.simpara{
 /* Navigation Links */
 
 div.navigation td {
-  padding: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 div.navigation form > label,
