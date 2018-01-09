@@ -553,6 +553,11 @@ div.footnote sup.simpara{
 
 /* Navigation Links */
 
+div.navigation td {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 div.navigation form > label,
 div.navigation .nav-button > a {
   color: #ffffff;
