@@ -574,7 +574,7 @@ div.navigation form input[type='text'] {
   padding-bottom: 0em;
   margin-left: 8px;
   margin-right: 8px;
-  width: calc(100% - 100px);
+  width: calc(100% - 62px);
   max-width: 200px;
   min-width: 3em;
 }
