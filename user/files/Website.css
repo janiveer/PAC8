@@ -554,8 +554,7 @@ div.footnote sup.simpara{
 /* Navigation Links */
 
 div.navigation td {
-  padding-left: 0px;
-  padding-right: 0px;
+  padding: 0px;
 }
 
 div.navigation form > label,
@@ -581,7 +580,7 @@ div.navigation form input[type='text'] {
   margin-right: 8px;
   border: 0px;
   border-radius: 2px;
-  width: calc(100% - 58px);
+  width: calc(100% - 68px);
   max-width: 200px;
   min-width: 3em;
 }
